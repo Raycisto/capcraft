@@ -27,10 +27,10 @@ class VoxelEngine:
         self.time = 0
 
         self.is_running = True
-        self.on.init()
+        self.on_init()
 
-        def on_init(self):
-            self.shader_program = ShaderProgram(self)
+    def on_init(self):
+        self.shader_program = ShaderProgram(self)
 
     def update(self):
         self.shader_program.update()
